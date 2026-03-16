@@ -10,7 +10,7 @@ const addTasks = ()=>{
     task.push(value)
 
     deleteTask.innerHTML= value
-    localStorage.setItem('task', JSON.stringify(task))
+    
     addTask.value = '';
 }
 
