@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <style>
+        #time{
+            font-size: 7vmin;
+            color: rgb(76, 176, 247);
+        }
+        .green{
+            background-color: rgb(5, 191, 5) ;
+            border: 2px solid transparent;
+            font-weight: 600;
+        }
+         .red{
+            background-color: rgb(224, 14, 6) ;
+            border: 2px solid transparent;
+             font-weight: 600;
+        }
+         .blue{
+            background-color: rgb(30, 138, 210) ;
+            border: 2px solid transparent;
+             font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h2>Stop Watch</h2>
+    <h1 id="time">00:00</h1>
+    <button id="start" class="green" onclick="startClock()">Start</button>
+    <button id="stop" class="red" onclick="stopClock()">Stop</button>
+    <button id="reset" class="blue" onclick="resetClock()">Reset</button>
+    <script src="/Stop Watch/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator</title>
+    <style>
+        body{
+         justify-items: center;
+            background-color: rgba(0, 179, 255, 0.516);
+        }
+
+.container{
+    margin-top: 120px;
+  display: flex;
+    justify-content: space-between;
+  gap: 20px
+}
+h3{
+   border: 10px;
+   border-radius: 2px solid red;
+}
+#form{
+    display: flex;
+		flex-direction: column;
+		gap: 20px;
+        z-index: 1;
+}
+
+input{
+    	  font-family: inherit;
+      background:#e0e4f00e;
+      border: 1px solid #00000087;
+      border-radius: 20px;
+      padding: 0.5rem 0.8rem;
+      font-size: 12px;
+	  font-weight: 500;
+      outline: none;
+      transition: all 0.2s ease;
+      color: #ffffffb7;
+      font-weight: 450;
+      width: 100%;
+      box-shadow: inset 0 2px 4px rgba(0,10,20,0.02);
+}
+
+button{
+    margin-left: 22px;
+		margin-top: 10px;
+		padding: 6px 40px;
+	font-weight:500;
+    color: rgba(240, 248, 255, 0.845);
+      font-family: inherit;
+      background:#00030e9a;
+      border: 1px solid #00000087;
+      border-radius: 20px;
+}
+
+.card{
+	background: linear-gradient(145deg, #2dbed4d4 30%, rgba(253, 80, 227, 0.379) 50%, #6492fcd9 70%);
+      border: 2px solid #00000087;
+      border-radius: 10px;
+      font-size: 12px;
+	  font-weight: 600;
+      height: 10%;
+      outline: none;
+      transition: all 0.2s ease;
+      color: #000000ac;
+      box-shadow: inset 0 2px 4px rgba(0,10,20,0.02);
+}
+
+    </style>
+</head>
+<body>
+
+    <h1> Business Card</h1>
+    <div class="container">
+   <div class="card"><p id="businessCard"></p></div>
+   <form id="form">
+   <input id="name" type="text" placeholder="name">
+   <input id="title" type="text" placeholder="business name...">
+   <input id="email" type="email" placeholder="email">
+   <button id="generate" >Generate Card</button>
+</form>
+</div>
+    <script src="/Business card generator/app.js"></script>
+</body>
+</html>

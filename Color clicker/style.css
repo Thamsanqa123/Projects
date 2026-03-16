@@ -1,0 +1,41 @@
+
+body{
+    background: none;
+  background-color: rgba(179, 179, 179, 0.274);
+}
+
+
+.buttons{
+    padding: 10px 0;
+    width: 60%; 
+ 
+}
+button{
+    margin: 5px;
+}
+
+.buttons .green{
+    padding: 14px 35px;
+    background-color: green;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.buttons .red{
+    padding: 14px 40px;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.buttons .blue{
+    padding: 14px 40px;
+    background-color: blue;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.buttons .random{
+    padding: 14px 30px;
+    background-color: pink;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
