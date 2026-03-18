@@ -5,15 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <script defer src="/To-Do List/app.js"></script>
-</head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        box-sizing: border-box;
+      }
+
+      .container{
+        background: linear-gradient(148deg, rgb(6, 6, 154), rgb(159, 11, 134)); 
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        
+      }
+#tasks li{
+    text-decoration: none;
+font-size:15px;
+list-style: none;
+cursor: pointer;
+margin: 0 auto 10px;
+}
+
+#tasks li button{
+    position: relative;
+    border: 1px solid rgb(33, 63, 123);
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 2px 17px;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    margin: 0 25px 0;
+  font-size:14px;
+    
+
+}
+
+#tasks li button:hover{
+background: rgb(6, 6, 154);
+color: rgb(252, 252, 252);
+}
+
+.container .listRow{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.listRow h2{
+    margin: 0 auto 15px;
+   
+}
+
+.container input{
+    padding: 6px 20px 6px 10px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: rgba(148, 148, 148, 0.194);
+}
+
+.container .inputArea{
+    margin: 0 auto 20px;
+}
+
+      /* .tasks{
+display: flex;
+flex-direction: column;
+      } */
+      </style>
 <body>
     <div class="container">
+        <div class="listRow">
     <h2>Task List</h2>
-    <input id="addTask" type="text" placeholder="input task...">
+    <div class="inputArea">
+    <input id="addTask" type="text" placeholder="add task...">
     <button id="taskBtn" type="submit" onclick="addTasks()">Add Task</button>
-    <div class="tasks">
-        <div id="deleteTask"></div>
-        <button id="deleteBtn" type="remove">Delete</button>
+    </div>
+    <ul id="tasks">
+        
+        
+    </ul>
     </div>
 </div>
 </body>

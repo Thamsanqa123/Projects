@@ -1,17 +1,37 @@
 
-let task = JSON.parse(localStorage.getItem('task')) || []
-const deleteTask = document.querySelector('#deleteTask')
+
+const tasks = document.querySelector('#tasks')
 const addTask = document.querySelector('#addTask')
+
+const saveTasks = ()=>{
+    localStorage.setItem('data', tasks.innerHTML)
+}
 
 const addTasks = ()=>{
 
     const value = addTask.value
 
-    task.push(value)
-
-    deleteTask.innerHTML= value
-    
-    addTask.value = '';
+let li = document.createElement("li")
+let button= document.createElement("button")
+tasks.appendChild(li)
+li.innerHTML = value
+button.textContent= "Clear"
+li.appendChild(button)
+    addTask.value = "";
+    saveTasks()
 }
-// yessss
-addTasks()
+
+tasks.addEventListener("click", (e)=>{
+
+
+    if(e.target.tagName === "BUTTON"){
+e.target.parentElement.remove()
+ saveTasks()
+    }
+})
+
+const showData = ()=>{
+    tasks.innerHTML= localStorage.getItem('data')
+}
+
+showData();
