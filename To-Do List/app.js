@@ -10,21 +10,22 @@ const saveTasks = ()=>{
 const addTasks = ()=>{
 
     const value = addTask.value
-
+if(value === ""){
+alert("empty input!")
+}else{ 
 let li = document.createElement("li")
 let button= document.createElement("button")
 tasks.appendChild(li)
 li.innerHTML = value
 button.textContent= "Clear"
-li.appendChild(button)
+li.appendChild(button)}
     addTask.value = "";
     saveTasks()
 }
 
 tasks.addEventListener("click", (e)=>{
 
-
-    if(e.target.tagName === "BUTTON"){
+if(e.target.tagName === "BUTTON"){
 e.target.parentElement.remove()
  saveTasks()
     }

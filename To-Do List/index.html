@@ -18,8 +18,21 @@
         width: 100%;
         height: 100vh;
         padding: 10px;
+
         
       }
+
+      @keyframes fade-in {
+        0%{
+            opacity: 0;
+            transform: translateY(30px) scale(0.7);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+        }
+      }
+     
 #tasks li{
     text-decoration: none;
 font-size:15px;
@@ -51,10 +64,11 @@ color: rgb(252, 252, 252);
 .container .listRow{
     width: 100%;
     max-width: 540px;
-    background: white;
+    background: rgb(255, 255, 255);
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    animation: fade-in 0.8s ;
 }
 
 .listRow h2{
@@ -68,6 +82,18 @@ color: rgb(252, 252, 252);
     border: 1px solid transparent;
     background-color: rgba(148, 148, 148, 0.194);
 }
+
+.container .inputArea button{
+   padding: 6px 15px;
+     border-radius: 15px;
+     border: 2px solid transparent;
+background: rgba(6, 6, 154, 0.783);
+color: white;
+ cursor: pointer;
+font-weight: 510;
+font-size: 11px;
+}
+
 
 .container .inputArea{
     margin: 0 auto 20px;
