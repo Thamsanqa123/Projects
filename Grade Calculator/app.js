@@ -33,8 +33,12 @@ for(let i = 0; i< grades.length; ++i){
   
     }
 }
+
+const studentPassed = grades.filter(element=> element > 60).length
+
+
 console.log(`lowest grades: ${lowestGrades}`)
 console.log(`average grades: ${averageGrd}`)
 console.log(`highest grades: ${highestGrd}`)
-
+console.log(`Students passed: ${studentPassed}`)
 
