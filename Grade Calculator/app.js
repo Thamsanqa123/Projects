@@ -23,7 +23,7 @@ for(let i = 0; i< grades.length; ++i){
    
     if(grades[i] <= 50){
     lowestGrades.push(grades[i])
-    return 'A'
+    
     }
     else if(grades[i] === 50 || grades[i] <=53){
  averageGrd.push(grades[i])

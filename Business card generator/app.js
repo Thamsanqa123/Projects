@@ -49,13 +49,18 @@ const clientCard = document.querySelector(".clientCard")
 input.addEventListener('input', (e)=>{
     e.preventDefault()
 
+
     const value = e.target.value
     if(value === ''){
 clientCard.innerHTML='';
-return;
-    }
+return
+    }else{
+        let li = document.createElement('li')
+clientCard.appendChild(li)
+li.innerHTML= value
+}
 
-    const results = clients.filter((client)=>{
+    const results = clients.filter(client=>{
 return client.name.toLowerCase().includes(value.toLowerCase()) || 
 (client.subject && client.subject.toLowerCase().includes(value.toLowerCase()))
     })
