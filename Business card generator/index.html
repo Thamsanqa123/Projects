@@ -6,8 +6,9 @@
     <title>Card Generator</title>
     <style>
         body{
+        height: 95vh;
          justify-items: center;
-            background-color: rgba(0, 179, 255, 0.516);
+            background: linear-gradient(186deg, rgb(23, 158, 255), rgb(233, 233, 233));
         }
 
 .container{
@@ -83,7 +84,7 @@ button{
     color: black;
 }
 
-.searchBar .clientCard{
+/* .searchBar .clientCard{
     background: linear-gradient(145deg, #3adff9ba 30%, rgba(253, 91, 229, 0.379) 50%, #729af9d9 70%);
       border: 2px solid #00000087;
       border-radius: 10px;
@@ -94,7 +95,8 @@ button{
       transition: all 0.2s ease;
       color: #000000ac;
       box-shadow: inset 0 2px 4px rgba(0,10,20,0.02);
-}
+      grid-column: auto;
+} */
 
     </style>
 </head>
@@ -103,7 +105,9 @@ button{
     <h1> Business Card</h1>
     <div class="searchBar">
         <input class="searchInput" type="search" placeholder="search...">
-<div class="clientCard"></div>
+<ul class="clientCard">
+
+</ul>
     </div>
     <div class="container">
    <div class="card"><p id="businessCard"></p></div>
