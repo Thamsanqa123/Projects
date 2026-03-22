@@ -1,0 +1,98 @@
+body{
+            background-color: rgba(226, 248, 255, 0.733);
+            
+            color: rgba(35, 38, 56, 0.963);
+        }
+
+        .container{
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+          max-width: 540px;
+          margin: 160px auto 0;
+           padding: 0 60px 0 100px;
+            border-radius: 10px;
+            color: rgba(58, 66, 112, 0.785);
+        }
+
+        #drawer{
+            position: relative;
+            bottom: 0;
+            right: 100px;
+           width: 60%;
+           /* height: 100%; */
+           border-radius: 10px 0 0 10px;
+        }
+        
+        .infoRow{
+            position: relative;
+            width:68%;
+            right:145px;
+            padding:0 0 25px 40px;
+            
+           background-color: rgb(254, 254, 254);
+           
+        }
+
+      .columnRow{
+        display: flex;
+        width: 100%;
+        
+      }
+
+      #subHead{
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+        .columnRow .appleTon{
+            display: flex;
+            /* justify-content: space-between; */
+            width: 100%;
+             gap: 5px;
+        }
+          #avatar{
+    
+        width: 40px;
+        height: 40px;
+	    border-radius: 20rem;
+        margin: 10px 0 10px;
+
+        }
+
+        #heading{
+          font-family:Arial, Helvetica, sans-serif;
+          font-weight: 600;
+          font-size: 1.2rem;
+
+        }
+
+        .columnRow .michell{
+            font-size: 11px;
+            line-height: 1.7;
+            width: 100px;
+        }
+
+        span{
+            font-weight: 500;
+            
+        }
+
+        #ton-color{
+            font-weight: 600;
+            font: bolder;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .share{
+            margin-top: 20px;
+            margin-left: 147px;
+            width: 20px;
+        height: 20px;
+        padding: 5px 8px 5px;
+            border-radius: 70px;
+            justify-content: center;
+            text-align: center;
+            background-color: rgba(58, 66, 112, 0.132);
+
+        }
