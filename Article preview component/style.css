@@ -94,5 +94,53 @@ body{
             justify-content: center;
             text-align: center;
             background-color: rgba(58, 66, 112, 0.132);
+            cursor: pointer;
 
         }
+
+        .share:hover{
+           
+          background:rgba(43, 49, 84, 0.849);
+        }
+
+        .socials{
+            position: absolute;
+            display: flex;
+            padding: 0 40px;
+            text-align: center;
+            justify-content: center;
+            width: 35%;
+         height: 18%;
+            gap: 14px;
+            top: 120px;
+            left: 250px;
+            border-radius: 11px;
+           backdrop-filter: blur(16px);
+            background:  rgba(43, 49, 84, 0.849);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .socials.active{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .socials img{
+            margin: 16px 0;
+        }
+
+        #shareLink{
+            margin: 20px 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 10px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgba(199, 205, 247, 0.719);
+        }
+
+        /* @media (max-width: 410px){
+
+
+        } */
