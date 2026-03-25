@@ -12,7 +12,10 @@ body{
           margin: 160px auto 0;
            padding: 0 60px 0 100px;
             border-radius: 10px;
+            overflow: hidden;
             color: rgba(58, 66, 112, 0.785);
+              /* box-shadow:0 0 20px 0 rgba(190, 51, 255, 0.292); */
+
         }
 
         #drawer{
@@ -20,6 +23,7 @@ body{
             bottom: 0;
             right: 100px;
            width: 60%;
+           display: block;
            /* height: 100%; */
            border-radius: 10px 0 0 10px;
         }
@@ -29,7 +33,7 @@ body{
             width:68%;
             right:145px;
             padding:0 0 25px 40px;
-            
+           
            background-color: rgb(254, 254, 254);
            
         }
@@ -41,7 +45,7 @@ body{
       }
 
       #subHead{
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.5;
       }
 
@@ -63,7 +67,7 @@ body{
         #heading{
           font-family:Arial, Helvetica, sans-serif;
           font-weight: 600;
-          font-size: 1.2rem;
+          font-size: 3vmin;
 
         }
 
@@ -118,6 +122,7 @@ body{
            backdrop-filter: blur(16px);
             background:  rgba(43, 49, 84, 0.849);
             opacity: 0;
+             transition: opacity 0.2s ease, visibility 0.2s ease;
             visibility: hidden;
         }
 
@@ -138,9 +143,49 @@ body{
             font-size: 10px;
             font-family:Arial, Helvetica, sans-serif;
             color: rgba(199, 205, 247, 0.719);
+            
         }
 
-        /* @media (max-width: 410px){
+        @media (max-width: 540px){
+
+            .container{
+                margin: 40px auto 0;
+                max-width: 300px;
+                padding: 70px 0 430px 0;
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            #drawer{
+                position: absolute;
+                max-width: 500px;
+         
+           border-radius: 10px 10px 0 0;
+                right: 100px;
+      bottom: 314px;
+
+            }
+
+            .infoRow{
+                position: absolute;
+                top: 230px;
+              left: 100px;
+              max-width: 260px; 
+              padding: 20px 20px 0;
+            }
+
+            .share{
+              max-width: 15px;
+                margin: 18px 0;
+            }
+
+            .socials{
+                 top: 256px;
+            left: 0;
+           margin: 0;
+           width: 220px;
+             border-radius: 0 0 10px 10px;
+            }
 
 
-        } */
+        }
